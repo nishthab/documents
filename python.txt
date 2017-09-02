@@ -1,0 +1,15 @@
+Search EveryWhere Double Shift
+Go to File Ctrl+Shift+N
+Recent Files Ctrl+E
+Navigation Bar Alt+HOme
+
+IntelliJ
+Configure 
+plugin 
+type python to install python plugin
+and set the local path to python.exe file 
+
+Configure->Setting>Editor->General->Appearance--
+check show line number
+
+Alt+1 to hide or show the project window

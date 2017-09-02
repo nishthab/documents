@@ -1,0 +1,103 @@
+conda create --name myDjangoEnv django
+conda create --name myDjangoENV python=3.5
+conda info --envs
+activate envname
+activate myDjango1
+conda install django
+django 1.11.3
+django 1.10.5
+
+python manage.py startapp first_app
+
+python manage.py migrate
+python manage.py makemigrations app1
+python manage.py createsuperuser
+superusername = Nishtha,nishtha.bhardwaj10@gmail.com
+password Welcome123
+
+pip install Faker
+-----------------------------------------------
+conda create --name profiles_rest_api django
+activate profiles_rest_api
+pip install djangorestframework==3.6.2
+cd src
+django-admin startproject profiles_project
+python manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+
+
+https://gist.github.com/LondonAppDev/01feb984211e1237f81ca3e4bdb1eeb7
+https://docs.djangoproject.com/en/1.11/ref/models/fields/
+
+--------------------------------------------------------
+Django REST Framework Views
+------------------------------
+APIView
+Viewset
+
+APIView:-- Uses standare HTTP Methods for functions:
+GET,POST,PUT,PATCh,DELETE
+Gives you the most control over the logic
+
+-- Perfect for implementing complex logic
+-- Calling other APIs
+-- Working with local files
+
+When to use APIViews?
+	- Your need a simple CRUD interface to your database.
+	- you want a quick and simple API.
+	- YOu need little to no customization on the logic.
+	- you are working with standard data structures.
+
+--------------------------------------
+Basic Requirements
+----------------------
+	- create new profile
+		- validate profile data
+	-List existing profiles
+		- search for profiles
+	-view specific profile
+	- update my profile of logges in user
+		- update name/email address
+		- change password
+	Delete profile
+
+---------
+API URLs
+------------
+URLs for our API:
+
+- /api/profile/ - list all profiles
+	- GET (list profiles)
+	- POST(Create profile)
+- /api/profile/<profile_id>/ - manage specific profile
+	- GET(view specific profile)
+	- PUT/PATCH(update profile)
+	- DELETE(remove profile)
+
+-----------------------
+some examples of when to use an APIViews:
+
+	- You need the full control over the logic
+	- Processting files and rendering a synchronous reponse.
+	- You are calling other APIs/services.
+	- Accessing local files or data
+
+Serialized Object
+--------------
+is an object in the Django Rest Framework that we can use to describe the data that we need to return and retrieve from our API
+A basically convert the text string of JSON to a Python object and vieca -versa
+----------------------------------------
+What are Viewset?
+Just like APIView viewsets allow us to write a logic for our endpoints, however instead of defining functions which mappes to Http methods viewsets except function that map to common api object function actions like
+	- List, create, Retrieve, Update, Partial Update, Destroy
+
+Takes cate a lot of typical logic for you:
+	- Perfect for standard database operations
+	- Fastest way to make a database interface
+when to use Viewsets?
+
+
+
+SAML,Auth2 and Okta
