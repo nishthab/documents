@@ -6,6 +6,9 @@ activate myDjango1
 conda install django
 django 1.11.3
 django 1.10.5
+------------------------------------------------------------
+virtualenv cpk_api_env
+-----------------------------------------------------
 
 python manage.py startapp first_app
 
