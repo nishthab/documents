@@ -9,6 +9,7 @@ django 1.10.5
 ------------------------------------------------------------
 virtualenv cpk_api_env
 pip install django==1.11
+pip install mysql-connector-python-rf
 pip install djangorestframework==3.6.2
 -----------------------------------------------------
 python manage.py inspectdb( create models from exising tables)
