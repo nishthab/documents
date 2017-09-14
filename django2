@@ -6,6 +6,22 @@ activate myDjango1
 conda install django
 django 1.11.3
 django 1.10.5
+-------------------------------------------------------------
+django-admin startproject demo_pro
+python manage.py startapp myapp
+this myapp needs to be registed with workspace that is demp_pro
+go to demo_pro/setting.py file
+here we a list of INSTALLED_APP here we need to register our app that is myapp,
+
+# To access the admin interface and syc the database following command must be ran
+before starting the serve first migrate
+pyhton manage.py migrate
+
+then runserver
+python manage.py runserver
+
+python manage.py createsuperuser
+nbhardwaj/Somya123
 ------------------------------------------------------------
 virtualenv cpk_api_env
 pip install django==1.11
