@@ -7,6 +7,8 @@ conda install django
 django 1.11.3
 django 1.10.5
 -------------------------------------------------------------
+python manage.py graph_models -a -o myapp_models.png
+-------------------------------------------------------------
 django-admin startproject demo_pro
 python manage.py startapp myapp
 this myapp needs to be registed with workspace that is demp_pro
