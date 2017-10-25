@@ -27,6 +27,7 @@ python manage.py createsuperuser
 nbhardwaj/Somya123
 ------------------------------------------------------------
 virtualenv cpk_api_env
+activate cpk_api_env (then install depedancy)
 pip install django==1.11
 pip install mysql-connector-python-rf
 pip install djangorestframework==3.6.2
